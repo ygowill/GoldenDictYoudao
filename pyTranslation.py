@@ -161,11 +161,13 @@ def getInput(word):
 
 
 def searchWord(word):
+    # 将你的appid填入这里
     appid = 'yourAppId'
     input = getInput(word)
     salt = str(uuid.uuid1()).replace('-', '')
     utc = str(int(time.time()))
     sha256 = hashlib.sha256()
+    # 将你的密码填入这里
     password = 'yourPassword'
     sha256.update((appid + input + salt + utc + password).encode('utf-8'))
     url = r'https://openapi.youdao.com/api?from=auto&to=zh-CHS' \
