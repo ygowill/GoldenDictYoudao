@@ -18,7 +18,7 @@
 
 然后将应用实例里面的应用id和应用密钥填入py脚本相应位置
 
-最后将这条命令填入,将里面的路径替换为自己的pyTranslation.py文件的路径
+最后将这条命令填入golden dict的sources->programs,将里面的路径替换为自己的pyTranslation.py文件的路径
 ```
 python3 /your/path/to/pyTranslation.py %GDWORD%
 ```
